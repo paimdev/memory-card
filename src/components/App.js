@@ -88,8 +88,11 @@ const App = () => {
     ].sort(() => Math.random() - 0.5)
 
   return (
-    <div className="">
-      <Scoreboard currentScore={currentScore} bestScore={bestScore} />
+    <div className="flex flex-col bg-slate-100">
+      <div className="p-4">
+        <h1 className="text-3xl text-black">Stack Memory Card Game</h1>
+        <Scoreboard currentScore={currentScore} bestScore={bestScore} />
+      </div>
       <div className='flex flex-col items-center'>
       <div className="lg:grid lg:grid-cols-4 lg:justify-items-center lg:w-3/4">
         {cardsArray}
